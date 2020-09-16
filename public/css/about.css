@@ -1,0 +1,263 @@
+body {
+    font-family: Century Gothic;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* CSS Navbar */
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #939799;
+}
+
+a {
+    color:  #939799;
+}
+
+a:hover {
+    color: #4a4c4df5;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color:  #939799;
+}
+
+.btn-login {
+    background:  #939799;
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    color:  #939799;
+}
+
+
+/* Active */
+
+.aktif {
+    border-bottom: 3px solid  #939799;
+}
+
+
+/* Efek Border dari Masuk Kemudian Keluar*/
+
+.sliding-underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.sliding-underline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+
+.sliding-underline:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background:  #939799;
+    transition: width .5s ease;
+}
+
+.sliding-underline:hover:before {
+    width: 100%;
+    background:  #939799;
+    transition: width .5s ease;
+}
+
+.sliding-underline:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+
+/* CSS Content */
+
+.jumbotron {
+    background: rgb(255, 255, 255);
+    background-image: url("/assets/image/about1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 80%;
+    background-size: 100%;
+    padding-bottom: 17.5%;
+    background-position: 0 -60px;
+}
+
+.gambar {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: .5s;
+}
+
+.gambar.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.bgKiri,
+.formKanan {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1.5s;
+}
+
+.formKanan {
+    transform: translate(50px, 0);
+}
+
+.bgKiri.bgMuncul,
+.formKanan.formMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.stay {
+    border: 5px solid white;
+    width: 40%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    color: white;
+    margin-top: 2%;
+}
+
+.pKiri,
+.pKanan {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1.5s;
+}
+
+.pKanan {
+    transform: translate(50px, 0);
+}
+
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.about {
+    min-height: 500px;
+}
+
+.team {
+    min-height: 700px;
+    background: #ffffff;
+}
+
+.contact {
+    min-height: 700px;
+}
+
+.judul {
+    color:  #939799;
+}
+
+.judul2 {
+    color: #ffffff;
+}
+
+.line {
+    border: 1.5px solid  #939799;
+    width: 30%;
+}
+
+.line2 {
+    border: 1.5px solid #ffffff;
+    width: 30%;
+}
+
+.foto {
+    width: 90%;
+}
+
+.desc {
+    width: 100%;
+    border: 5px solid white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:  #939799;
+    opacity: 1;
+    /* Firefox */
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color:  #939799;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color:  #939799;
+}
+
+.tombol {
+    background:  #939799;
+    color: #ffffff;
+    border-radius: 0px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1.5%;
+    border: 1px solid #ced4da;
+    color:  #939799;
+}
+
+.form-input:focus {
+    width: 100%;
+    padding: 1.5%;
+    border: 1px solid #ced4da;
+    color:  #939799;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    background:  #939799;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 2%;
+}
+
+.btn-warna {
+    background-color: #ffffff;
+    color: rgba(56, 57, 58, 0.979);
+    width: 31%;
+}
+
+.btn-warna:hover {
+    background-color: rgb(105, 101, 101);
+    color:  #939799;
+}

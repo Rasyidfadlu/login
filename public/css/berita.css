@@ -1,0 +1,153 @@
+body {
+    font-family: Century Gothic;
+}
+
+
+/* CSS Navbar */
+
+.navbar {
+    background-color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:  #939799;
+}
+
+a {
+    color:  #939799;
+}
+
+a:hover {
+    color: #2b2c2cef;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color:  #939799;
+}
+
+.btn-login {
+    background:  #939799;
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    color:  #939799;
+}
+
+
+/* CSS Background Home */
+
+.bg-berita {
+    background-image: url('/assets/image/berita1.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 67%;
+    background-size: 100%;
+    z-index: -1;
+    margin-top: -6%;
+    padding-bottom: 31%;
+}
+
+
+/* Active */
+
+.aktif {
+    border-bottom: 3px solid  #939799;
+}
+
+
+/* Efek Border dari Masuk Kemudian Keluar*/
+
+.sliding-underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.sliding-underline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .5s ease;
+}
+
+.sliding-underline:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background:  #939799;
+    transition: width .5s ease;
+}
+
+.sliding-underline:hover:before {
+    width: 100%;
+    background:  #939799;
+    transition: width .5s ease;
+}
+
+.sliding-underline:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+
+/* CSS Content Berita */
+
+.tanggal {
+    color:  #939799;
+}
+
+.btn-warna {
+    color: #ffffff;
+    background:  #939799;
+    font-weight: bold;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 17px;
+}
+
+.btn-warna:hover {
+    color: #ffffff;
+    background:  #939799;
+    font-weight: bold;
+}
+
+.input-group {
+    width: 96%;
+}
+
+.input-group-text {
+    color: #ffffff;
+    background:  #939799;
+    border: 1px solid  #939799;
+}
+
+.pagination {
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    background:  #939799;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 2%;
+    margin-top: 2%;
+}

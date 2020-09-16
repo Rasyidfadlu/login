@@ -1,0 +1,144 @@
+body {
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+.garis {
+    border: 1px solid #ffffff;
+    width: 99%;
+    opacity: 0.5;
+}
+
+.aktif {
+    border-bottom: 3px solid #ffffff;
+}
+
+.profil {
+    border-bottom: 1px solid #1d252b;
+}
+
+.text-color {
+    color: #ffffff;
+}
+
+.bg-color {
+    background: #2b2c2c;
+}
+
+.navs {
+    height: 3000px;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    background:  #939799;
+}
+
+.content {
+    margin-left: 15%;
+}
+
+.sliding-underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.sliding-underline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .7s ease;
+}
+
+.sliding-underline:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #ffffff;
+    transition: width .7s ease;
+}
+
+.sliding-underline:hover:before {
+    width: 100%;
+    background: #ffffff;
+    transition: width .7s ease;
+}
+
+.sliding-underline:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+
+/* .page-link {
+    background: #252733;
+    color: white;
+}
+
+.page-link:hover {
+    background: #007bff;
+    color: white;
+} */
+
+.card-body-icon {
+    position: absolute;
+    z-index: 0;
+    top: 20px;
+    right: 15px;
+    opacity: 0.4;
+    font-size: 90px;
+}
+
+.line {
+    border: 1px solid #343A40;
+    width: 94%;
+}
+
+.tombol {
+    margin-left: 20px;
+    margin-top: -10px;
+}
+
+.card {
+    border-radius: 0px;
+    width: 95%;
+}
+
+.border-form {
+    border: 1px solid black;
+    width: 95%;
+}
+
+.box {
+    border: 1px solid rgb(194, 194, 194);
+    width: 360px;
+    height: 360px;
+    margin-top: 6%;
+}
+
+.form-control-file {
+    margin-left: 14%;
+}
+
+.img-edit {
+    position: absolute;
+    top: 0;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    margin-left: 76px;
+}
+
+.add {
+    position: absolute;
+    top: 400px;
+    left: 4px;
+}

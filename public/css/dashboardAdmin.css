@@ -1,0 +1,123 @@
+body {
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+.garis {
+    border: 1px solid #ffffff;
+    width: 99%;
+    opacity: 0.5;
+}
+
+.aktif {
+    border-bottom: 3px solid #ffffff;
+}
+
+.profil {
+    border-bottom: 1px solid #2b343a;
+}
+
+.text-color {
+    color: #ffffff;
+}
+
+.bg-color {
+    background: #58595a;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navs {
+    height: 3000px;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    background:  #939799;
+}
+
+.content {
+    margin-left: 15%;
+}
+
+.sliding-underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.sliding-underline:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0s ease, background .7s ease;
+}
+
+.sliding-underline:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #ffffff;
+    transition: width .7s ease;
+}
+
+.sliding-underline:hover:before {
+    width: 100%;
+    background: #ffffff;
+    transition: width .7s ease;
+}
+
+.sliding-underline:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+.page-link {
+    background: #252733;
+    color: white;
+}
+
+.page-link:hover {
+    background: #007bff;
+    color: white;
+}
+
+.card-body-icon {
+    position: absolute;
+    z-index: 0;
+    top: 20px;
+    right: 15px;
+    opacity: 0.4;
+    font-size: 90px;
+}
+
+.card {
+    background: #007abb;
+}
+
+.jumbotron {
+    margin-top: 1%;
+    background-color:  #939799;
+    width: 81%;
+}
+
+.card-covid {
+    width: 96.6%;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.my-4 {
+    width: 96%;
+    margin-left: -1px;
+}
