@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="{{ URL::asset('/assets/DataTables/datatables.min.css')}}">
 <link rel="stylesheet" href="{{ URL::asset('/assets/fontawesome/css/all.min.css')}}">
 
+
 @yield('style')
 
 </head>
@@ -19,7 +20,7 @@
             <ul class=" nav flex-column navs">
                 <li class=" nav-item bg-color mb-3 ">
                     <a class=" navbar-brand nav-link text-white text-decoration-none" href="">
-                        <h4>COVID - INFO</h4>
+                        <h4>ERP-SOLVINDO</h4>
                     </a>
                 </li>
                 <li class=" nav-item pb-3 mb-2 profil ">
@@ -37,17 +38,47 @@
                 </li>
                 <li class=" nav-item mb-2 pt-2 pb-2 sliding-underline">
                     <h6>
-                        <i class=" fas fa-tachometer-alt text-white ml-4 " style=" font-size: 145%; "></i><a class=" nav-link d-inline text-white " href="{{url('/dashboardAdmin')}}">DASHBOARD</a>
+                        <i class=" fas fa-tachometer-alt nav-icon la la-group text-white ml-4 " style=" font-size: 145%; "></i><a class=" nav-link d-inline text-white " href="{{url('/dashboardAdmin')}}">DASHBOARD</a>
+                    </h6>
+                </li>  
+                <li class="nav-item mt-1 pt-1 sliding-underline">
+                    <h6>
+                    <i class="fa fa-user-circle text-white ml-4 " aria-hidden="true" style="font-size: 145%; "></i><a class="nav-link d-inline text-white " href="{{url('/')}}">SALES AND MARKETING</a>
                     </h6>
                 </li>
                 <li class="nav-item mt-1 pt-1 sliding-underline">
                     <h6>
-                        <i class="fas fa-newspaper text-white ml-4 " style="font-size: 145%; "></i><a class="nav-link d-inline text-white " href="{{url('/beritaAdmin')}}">BERITA</a>
+                        <i class="fas fa-users text-white ml-4 " style="font-size: 145%; "></i><a class="nav-link d-inline text-white " href="{{url('/')}}">SALES & ADMIN</a>
+                    </h6>
+                </li>
+                <li class="nav-item mt-1 pt-1 sliding-underline">
+                    <h6>
+                        <i class="fas fa-cubes text-white ml-4 " style="font-size: 145%; "></i><a class="nav-link d-inline text-white " href="{{url('/')}}">ASSET & INVENTORY</a>
+                    </h6>
+                </li>
+                <li class="nav-item mt-1 pt-1 sliding-underline">
+                    <h6>
+                        <i class="fas fa-desktop text-white ml-4 " style="font-size: 145%; "></i><a class="nav-link d-inline text-white " href="{{url('/')}}">N O C</a>
+                    </h6>
+                </li>
+                <li class="nav-item mt-1 pt-1 sliding-underline">
+                    <h6>
+                        <i class="fa fa-credit-card text-white ml-4 " style="font-size: 145%; "></i><a class="nav-link d-inline text-white " href="{{url('/')}}">FINANCE</a>
+                    </h6>
+                </li>
+                <li class="nav-item mt-1 pt-1 sliding-underline">
+                    <h6>
+                        <i class="fas fa-industry text-white ml-4 " style="font-size: 145%; "></i><a class="nav-link d-inline text-white " href="{{url('/')}}">ANALISIS INVESTASI</a>
                     </h6>
                 </li>
                 <li class="nav-item mt-1 pt-3 sliding-underline">
                     <h6>
-                        <i class="fas fa-hospital text-white ml-4 " style="font-size: 145%; "></i><a class="nav-link d-inline text-white " href="{{url('/hospitalAdmin')}}">HOSPITAL</a>
+                        <i class="fas fa-user-plus text-white ml-4 " style="font-size: 145%; "></i><a class="nav-link d-inline text-white " href="{{url('/')}}">HUMAN RESOURCE</a>
+                    </h6>
+                </li>
+                <li class="nav-item mt-1 pt-1 sliding-underline">
+                    <h6>
+                        <i class="fas fa-cogs text-white ml-4 " style="font-size: 145%; "></i><a class="nav-link d-inline text-white " href="{{url('/')}}">OPERATION</a>
                     </h6>
                 </li>
                 <li class="nav-item mb-2 mt-2 pt-2 profil pb-2 sliding-underline">
@@ -73,6 +104,8 @@
     <script src="{{URL::asset('/assets/DataTables/jQuery/jquery-3.3.1.min.js')}}"></script>
     <script src="{{URL::asset('/assets/DataTables/Bootstrap/js/bootstrap.min.js')}}"></script>
     <script src="{{URL::asset('/assets/DataTables/datatables.min.js')}}"></script>
+
+
     @yield('script')
 
 </body>

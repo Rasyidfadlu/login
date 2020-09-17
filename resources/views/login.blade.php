@@ -16,9 +16,9 @@
 
     <div class="content">
         <div class="row no-gutters">
-            <div class="col-md-6 bgKiri">
+            <!--<div class="col-md-6 bgKiri">
                 <img class="bg-login" src="{{ URL::asset('/assets/image/login.gif')}}" alt="">
-            </div>
+            </div>-->
             <div class="col-md-6 formKanan">
                 <form method="POST" action="{{ route('login') }}">
                     {{ csrf_field() }}
