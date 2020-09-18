@@ -11,7 +11,7 @@
 <?php
 
 $action = 'input';
-$title = '  <i class="fas fa-plus-square ml-4"></i> INPUT RUJUKAN';
+$title = '  <i class="fas fa-plus-square ml-4"></i> Entri Data Prospek';
 
 if (!empty($rujuk)){
 
@@ -42,22 +42,88 @@ $title = ' <i class=" fas fa-edit ml-4 "></i> EDIT RUJUKAN';
                     @if(!empty($rujuk))
                         @method('PATCH')
                     @endif
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="font-weight judul text-left mt-5">I. ISP/PROVIDER</h1>
+                                <hr class="line">
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="form-group">
-                        <label for="">Nama Rumah Sakit</label>
-                        <input type="text" class="form-control" name="nm_rumahsakit" value="{{ old('nm_rumahsakit', @$rujuk->nm_rumahsakit) }}">
+                        <!--<label for="">Nama Rumah Sakit</label>-->
+                        <input type="text" class="form-control" name="nm_rumahsakit" value="{{ old('nm_rumahsakit', @$rujuk->nm_rumahsakit) }}" disabled="disabled" placeholder="ISP/PROVIDER">
                     </div>
                     <div class="form-group">
-                        <label for="">Tingkat Rujukan</label>
-                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}} ">
+                        <!--<label for="">Tingkat Rujukan</label>-->
+                        <input type="text" disabled="disabled" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="TELEPHONE">
                     </div>
                     <div class="form-group">
-                        <label for="">Alamat</label>
-                        <textarea class="form-control" name="Alamat">{{old('Alamat', @$rujuk->Alamat)}}</textarea>
+                        
+                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="FAX">
                     </div>
-                    <button type="submit" class="btn btn-dark">SAVE</button>
+                    <div class="form-group">
+                        
+                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="PIC">
+                    </div>
+                    <div class="form-group">
+                        
+                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="JABATAN">
+                    </div>
+                    <div class="form-group">
+                        
+                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="HP">
+                    </div>
+                    <div class="form-group">
+                        
+                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="EMAIL">
+                    </div>
+                    <div class="form-group">
+                        
+                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="PIC 2 (Billing)">
+                    </div>
+                    <div class="form-group">
+                        
+                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="PIC 2 Phone">
+                    </div>
+                    <div class="form-group">   
+                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="PHONE (work)">
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1 class="font-weight judul text-left mt-5">II. DATA PROSPEK</h1>
+                                <hr class="line">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">   
+                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="NAMA LOKASI" required="Form harus diisi">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="Alamat" placeholder="ALAMAT" required="Form harus diisi">{{old('Alamat', @$rujuk->Alamat)}}</textarea>
+                    </div>
+                    <div class="form-group">   
+                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="KOTA" required="Form harus diisi">
+                    </div>
+                    <div class="form-group">   
+                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="PROVINSI" required="Form harus diisi">
+                    </div>
+                    <div class="form-group">   
+                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="LATITUDE" required="Form harus diisi">
+                    </div>
+                    <div class="form-group">   
+                        <input type="text" class="form-control" name="Tingkat_rujukan" value="{{ old('Tingkat_rujukan',@$rujuk->Tingkat_rujukan)}}" placeholder="LONGTITUDE" required="Form harus diisi">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="Alamat" placeholder="NOTE/CATATAN" required="Form harus diisi">{{old('Alamat', @$rujuk->Alamat)}}</textarea>
+                    </div>
+                    <button type="submit" class="btn btn-danger">RESET</button>   <button type="submit" class="btn btn-secondary">SUBMIT</button>
                 </div>
             
-                <div class="col-md-6">
+                <!--<div class="col-md-6">
                     <div class="form-group">
                         <div>
                             <input type="file" name="file" id="chooseFile" class="form-control-file add " >
@@ -74,7 +140,7 @@ $title = ' <i class=" fas fa-edit ml-4 "></i> EDIT RUJUKAN';
                                 </div>
                                 <input type="file" name="file" id="chooseFile" class="form-control-file"> --}}
                         </div>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </form>

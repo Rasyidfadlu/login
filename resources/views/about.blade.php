@@ -99,7 +99,7 @@
                         </div>
                         <div class="form-group mt-4">
                             <input type="email" name="email" class="form-input font-weight-bold " placeholder="YOUR E-MAIL ADDRESS">
-                        </div>
+                        </div>  
                         <div class="form-group mt-4">
                             <input type="tel" name="phone" class="form-input font-weight-bold " placeholder="YOUR NUMBER PHONE">
                         </div>
