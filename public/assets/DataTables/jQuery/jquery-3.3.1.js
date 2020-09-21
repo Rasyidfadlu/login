@@ -1,4 +1,4 @@
-/*!
+/*!$
  * jQuery JavaScript Library v3.3.1
  * https://jquery.com/
  *
@@ -11,6 +11,28 @@
  *
  * Date: 2018-01-20T17:24Z
  */
+$("#box").hide();
+
+$("#tombol").click(function(){
+	$("#box").toggle();
+	$("#box2").hide();
+	$("#box3").hide();
+	$("#box4").hide();
+	$("#box5").hide();
+});
+$("#tombol2").click(function(){
+	$("#box2").toggle();
+});
+$("#tombol3").click(function(){
+	$("#box3").toggle();
+});
+$("#tombol4").click(function(){
+	$("#box4").toggle();
+});
+$("#tombol5").click(function(){
+	$("#box5").toggle();
+});
+
 ( function( global, factory ) {
 
 	"use strict";

@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
 
-    <link rel="stylesheet" href="{{ URL::asset('/assets/DataTables/Bootstrap/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{ URL::asset('/assets/DataTables/datatables.min.css')}}">
-    <link rel="stylesheet" href="{{ URL::asset('/assets/fontawesome/css/all.min.css')}}">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="{{ URL::asset('/assets/DataTables/Bootstrap/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{ URL::asset('/assets/DataTables/datatables.min.css')}}">
+        <link rel="stylesheet" href="{{ URL::asset('/assets/fontawesome/css/all.min.css')}}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <style>
         .dropdown-menu {
@@ -43,19 +45,89 @@
                         </div>
                     </div>
                 </li>
+
+               
+            
                 <li class=" nav-item mb-2 pt-2 pb-2 sliding-underline">
             
                         <i class=" fas fa-tachometer-alt nav-icon la la-group text-white ml-4 " style=" font-size: 145%; "></i><a class=" nav-link d-inline text-white " href="{{url('/dashboardAdmin')}}">DASHBOARD</a>
                 </li>  
                 <li class="nav-item  mb-2 pt-2 pb-2 sliding-underline dropdown">
-                    <i class="fa fa-user-circle text-white ml-4" aria-hidden="true" style="font-size: 145%; "></i><a class="nav-link dropdown collapsible-header  d-inline text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="true">SALES AND MARKETING</a>
-                    <div class="dropdown-menu collapsible-body">
+                    <i class="fa fa-user-circle text-white ml-4" aria-hidden="true" style="font-size: 145%; "></i><a  id="tombol" class="nav-link dropdown collapsible-header  d-inline text-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="true">SALES AND MARKETING</a>
+                    <div id="box" class=" collapsible-body">
                         <ul>
                             <li>
-                                <a class="dropdown-item text-white waves-effect" style="font-size: 115%;" href="/hospitalAdmin/create">Prospek and Activition</a>
-                                <a class="dropdown-item text-white waves-effect" style="font-size: 115%;" href="/hospitalAdmin/create">Data Management</a>
-                                <a class="dropdown-item text-white waves-effect" style="font-size: 115%;" href="/hospitalAdmin/create">Perubahan Data Customer</a>
-                                <a class="dropdown-item text-white waves-effect" style="font-size: 115%;" href="/hospitalAdmin/create">Partner/ISP</a>
+
+                                <li class="dropdown-item fas fa-folder  text-white waves-effect" id="tombol2" style="font-size: 125%;">Aktifasi Customer</li>
+                                    <div id="box2">
+                                        <ul>
+                                            <li class="">
+                                                <a style="font-size: 125%; margin-left: 10px;" class="text-white waves-effect" href="/beritaAdmin/create">
+                                                Entri Data Prospek
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a style="font-size: 125%; margin-left: 10px;" class="text-white waves-effect" href="#">
+                                                Prospek Data
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a style="font-size: 125%; margin-left: 10px;" class="text-white waves-effect" href="#">
+                                                Proses Instalasi
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <li class="dropdown-item text-white waves-effect fas fa-folder" style="font-size: 125%;" id="tombol3" href="#">Data Management</li>
+                                    <div id="box3">
+                                        <ul>
+                                            <li class="">
+                                                <a style="font-size: 125%; margin-left: 10px;" class="text-white waves-effect" href="#">
+                                                Data Customer Aktif
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a style="font-size: 125%; margin-left: 10px;" class="text-white waves-effect" href="#">
+                                                Dismantle Customer
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <li class="dropdown-item text-white waves-effect fas fa-folder" style="font-size: 125%;" id="tombol4" href="#">Perubahan Data Customer</li>
+                                    <div id="box4">
+                                        <ul>
+                                            <li class="">
+                                                <a style="font-size: 125%; margin-left: 10px;" class="text-white waves-effect" href="#">
+                                                Upgrade/Dowgrade
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a style="font-size: 125%; margin-left: 10px;" class="text-white waves-effect" href="#">
+                                                Proses Dismatle
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a style="font-size: 125%; margin-left: 10px;" class="text-white waves-effect" href="#">
+                                                Relokasi
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <li class="dropdown-item text-white waves-effect fas fa-folder" style="font-size: 125%;" id="tombol5" href="/beritaAdmin/create">Partner/ISP</li>
+                                    <div id="box5">
+                                        <ul>
+                                            <li class="">
+                                                <a style="font-size: 115%; margin-left: 10px;" class="text-white waves-effect" href="#">
+                                                Add New ISP/Paartner
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a style="font-size: 115%; margin-left: 10px;" class="text-white waves-effect" href="#">
+                                                ISP/Partner Lists
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                             </li>
                         </ul>
                     </div>
@@ -97,6 +169,7 @@
                         <i class="fas fa-sign-out-alt text-white ml-4 " style="font-size: 145%; "></i><a class="nav-link d-inline text-white " href="{{ route('logout') }}">LOGOUT</a>
                 </li>
                 <li class=" nav-item pt-2 pb-2 mt-2 ">
+                
                 </li>
             </ul>
         </div>
@@ -110,6 +183,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script src="{{URL::asset('/assets/DataTables/jQuery/jquery-3.3.1.js')}}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     @yield('script')
 
