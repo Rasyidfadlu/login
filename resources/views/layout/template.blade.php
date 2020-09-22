@@ -13,7 +13,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand " href="#">ICOVID-19</a>
+        <a class="navbar-brand " href="#">ERP-SOLVINDO</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -21,7 +21,7 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ml-auto">
               <a class="nav-item nav-link text-decoration-none font-weight-bold mr-2 ml-2 @yield('home')" href="{{url('/home')}}">HOME</a>
-              <a class="nav-item nav-link font-weight-bold mr-2 ml-2 @yield('info')" href="{{ url('/info ') }}">ICOVID</a>
+              <a class="nav-item nav-link font-weight-bold mr-2 ml-2 @yield('info')" href="{{ url('/info ') }}">ISOLVINDO</a>
               <a class="nav-item nav-link font-weight-bold mr-2 ml-2 @yield('hospital')" href="{{url('/hospital')}}">HOSPITAL</a>
               <a class="nav-item nav-link font-weight-bold mr-2 ml-2 @yield('berita')" href="{{url('/berita')}}">BERITA</a>
               <a class="nav-item nav-link font-weight-bold mr-4 ml-2 @yield('about')" href="{{url('/about')}}">ABOUT US</a>

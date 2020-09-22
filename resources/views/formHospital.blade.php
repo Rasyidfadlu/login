@@ -1,6 +1,6 @@
 @extends('layout/templateAdmin')
 
-@section('title', 'Form Rumah Sakit')
+@section('title', 'Entri Data Prospek')
 
 @section('style')
     <link rel="stylesheet" href="{{ URL::asset('/css/formHospital.css')}}">
@@ -11,7 +11,7 @@
 <?php
 
 $action = 'input';
-$title = '  <i class="fas fa-plus-square ml-4"></i> Entri Data Prospek';
+$title = '  <i class="fas fa-list-ul ml-4"></i> Entri Data Prospek';
 
 if (!empty($rujuk)){
 

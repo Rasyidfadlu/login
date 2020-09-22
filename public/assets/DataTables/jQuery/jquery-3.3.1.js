@@ -12,6 +12,9 @@
  * Date: 2018-01-20T17:24Z
  */
 $("#box").hide();
+$("#boxx").hide();
+$("#boxxx").hide();
+$("#boxxxx").hide();
 
 $("#tombol").click(function(){
 	$("#box").toggle();
@@ -23,7 +26,7 @@ $("#tombol").click(function(){
 $("#tombol2").click(function(){
 	$("#box2").toggle();
 });
-$("#tombol3").click(function(){
+$("#tombol3").click(function(){  
 	$("#box3").toggle();
 });
 $("#tombol4").click(function(){
@@ -32,6 +35,44 @@ $("#tombol4").click(function(){
 $("#tombol5").click(function(){
 	$("#box5").toggle();
 });
+$("#tombol6").click(function(){
+	$("#boxx").toggle();
+	$("#lol").hide();
+});
+$("#tombol7").click(function(){
+	$("#boxxx").toggle();
+	$("#box8").hide();
+	$("#box9").hide();
+	$("#box10").hide();
+	$("#box11").hide();
+	$("#lol2").hide();
+});
+$("#tombol8").click(function(){
+	$("#box8").toggle();
+});
+$("#tombol9").click(function(){
+	$("#box9").toggle();
+});
+$("#tombol10").click(function(){
+	$("#box10").toggle();
+});
+$("#tombol11").click(function(){
+	$("#box11").toggle();
+});
+$("#tombol12").click(function(){
+	$("#boxxxx").toggle();
+	$('#lol3').hide();
+});
+$("#tap").click(function(){
+	$("#lol").toggle();
+});
+$("#tapp").click(function(){
+	$("#lol2").toggle();	
+});
+$("#tappp").click(function(){
+	$("#lol3").toggle();	
+});
+
 
 ( function( global, factory ) {
 
